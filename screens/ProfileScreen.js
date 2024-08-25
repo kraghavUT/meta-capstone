@@ -175,11 +175,7 @@ const ProfileScreen = ({ navigation, route }) => {
           onPress = {() => {pickImage}}>        
           <Text style = {styles.buttonText}>Change</Text>
         </Pressable>
-        <Pressable
-          style = {styles.button}
-          onPress = {() => {}}>        
-          <Text style = {styles.buttonText}>Remove</Text>
-        </Pressable>
+        
       </View>
     
       <Text style={styles.textSmall}>First name</Text>
@@ -195,7 +191,7 @@ const ProfileScreen = ({ navigation, route }) => {
       
       <View style={styles.checkboxWrapper}>
         <Checkbox value={isOrderChecked} onValueChange={handleOrderCheck} />
-        <Text style={styles.textSmall}>Order statuses</Text>
+        <Text style={styles.textSmall}>Order status</Text>
       </View>
 
       <View style={styles.checkboxWrapper}>
@@ -274,24 +270,25 @@ const styles = StyleSheet.create({
     padding: 5,
   },
   textSmall: {
-    fontSize: 10,
-    color: '#495E57',
+    fontSize: 20,
+    color: '#707070',
     marginLeft: 10,
   },
   textLarge: {
-    fontSize: 16,
+    fontSize: 26,
     fontWeight: 'bold',
     color: 'black',
+    textAlign: 'center',
     marginLeft: 10,
-    marginTop: 20,
-    marginBottom: 10,
+    marginTop: 10,
+    marginBottom: 5,
   },
   inputBox: {
     height: 40,
     fontSize: 16,
     marginHorizontal: 10,
     borderColor: '#495E57',
-    backgroundColor: '#d3d3d3',
+    backgroundColor: '#FAE29C',
     borderWidth: 2,
     borderRadius: 10,
     marginBottom: 10,
@@ -308,13 +305,13 @@ const styles = StyleSheet.create({
   },
   buttonActive: {
     borderColor: 'black',
-    color: 'green'
+    color: '#FDE992'
   },
   buttonDisabled: {
     borderColor: '#d3d3d3',
   },
   buttonText: {
-    color: '#495E57',
+    color: '#000',
     textAlign: 'center',
     fontSize: 16,
   },
